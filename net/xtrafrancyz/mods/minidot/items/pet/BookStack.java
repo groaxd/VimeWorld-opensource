@@ -1,0 +1,300 @@
+package net.xtrafrancyz.mods.minidot.items.pet;
+
+import net.minecraft.client.model.ModelBox;
+import net.minecraft.client.model.ModelPlayer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.ResourceLocation;
+import net.xtrafrancyz.mods.minidot.MiniDotPlayer;
+import net.xtrafrancyz.mods.minidot.items.MModelRenderer;
+import net.xtrafrancyz.mods.minidot.items.animation.BBAnimationLoader;
+import net.xtrafrancyz.mods.minidot.items.animation.IAnimation;
+
+public class BookStack extends BasePet
+{
+    private final MModelRenderer book1;
+    private final MModelRenderer book2;
+    private final MModelRenderer book3;
+    private final MModelRenderer book4;
+    private final MModelRenderer book4_list3;
+    private final MModelRenderer list4;
+    private final MModelRenderer list3;
+    private final MModelRenderer list2;
+    private final MModelRenderer list1;
+    private final MModelRenderer list5;
+    private final MModelRenderer book4_list2;
+    private final MModelRenderer list6;
+    private final MModelRenderer list7;
+    private final MModelRenderer list8;
+    private final MModelRenderer list9;
+    private final MModelRenderer list10;
+    private final MModelRenderer book4_list4;
+    private final MModelRenderer list11;
+    private final MModelRenderer list12;
+    private final MModelRenderer list13;
+    private final MModelRenderer list14;
+    private final MModelRenderer list15;
+    private final MModelRenderer cup;
+    private final MModelRenderer bone15;
+    private final MModelRenderer bone11;
+    private final MModelRenderer bone12;
+    private final MModelRenderer bone13;
+    private final MModelRenderer bone14;
+    private final MModelRenderer bone6;
+    private final MModelRenderer bone7;
+    private final MModelRenderer bone8;
+    private final MModelRenderer bone9;
+    private final MModelRenderer bone5;
+    private final MModelRenderer bone4;
+    private final MModelRenderer bone10;
+    private final MModelRenderer bone3;
+    private final MModelRenderer bone2;
+    private final MModelRenderer Svecka;
+    private final MModelRenderer svecha;
+    private final MModelRenderer kaplya;
+    private final MModelRenderer kaplya2;
+    private final MModelRenderer ogon;
+    private final MModelRenderer ogon2;
+    private final IAnimation animation;
+
+    public BookStack()
+    {
+        this.textureWidth = 64;
+        this.textureHeight = 64;
+        this.book1 = new MModelRenderer(this);
+        this.book1.setRotationPoint(0.0F, -1.8F, 0.0F);
+        this.book1.cubeList.add(new ModelBox(this.book1, 32, 10, -4.4F, -0.6F, -4.0F, 7, 1, 9, 0.0F, false));
+        this.book1.cubeList.add(new ModelBox(this.book1, 0, 28, -5.0F, -1.2F, -5.0F, 9, 1, 11, -0.4F, false));
+        this.book1.cubeList.add(new ModelBox(this.book1, 0, 28, -5.0F, 0.0F, -5.0F, 9, 1, 11, -0.4F, false));
+        this.book1.cubeList.add(new ModelBox(this.book1, 40, 22, -5.0F, -1.0F, -5.0001F, 1, 2, 11, -0.4003F, false));
+        this.book2 = new MModelRenderer(this);
+        this.book2.setRotationPoint(1.0F, -3.2F, -1.0F);
+        this.book2.cubeList.add(new ModelBox(this.book2, 32, 10, -4.4F, -0.6F, -4.0F, 7, 1, 9, 0.0F, false));
+        this.book2.cubeList.add(new ModelBox(this.book2, 0, 40, -5.0F, -1.2F, -5.0F, 9, 1, 11, -0.4F, false));
+        this.book2.cubeList.add(new ModelBox(this.book2, 0, 40, -5.0F, 0.0F, -5.0F, 9, 1, 11, -0.4F, false));
+        this.book2.cubeList.add(new ModelBox(this.book2, 40, 36, -5.0F, -1.0F, -5.0001F, 1, 2, 11, -0.4003F, false));
+        this.book3 = new MModelRenderer(this);
+        this.book3.setRotationPoint(-2.0F, -4.6F, 2.0F);
+        this.book3.cubeList.add(new ModelBox(this.book3, 32, 10, -3.4F, -0.6F, -5.0F, 7, 1, 9, 0.0F, false));
+        this.book3.cubeList.add(new ModelBox(this.book3, 0, 52, -4.0F, -1.2F, -6.0F, 9, 1, 11, -0.4F, false));
+        this.book3.cubeList.add(new ModelBox(this.book3, 0, 52, -4.0F, 0.0F, -6.0F, 9, 1, 11, -0.4F, false));
+        this.book3.cubeList.add(new ModelBox(this.book3, 40, 50, -4.0F, -1.0F, -6.0001F, 1, 2, 11, -0.4003F, false));
+        this.book4 = new MModelRenderer(this);
+        this.book4.setRotationPoint(3.3F, -5.6F, -5.35F);
+        this.setRotation(this.book4, 1.1781F, 0.0F, 0.0F);
+        this.book4.cubeList.add(new ModelBox(this.book4, 0, 4, -5.35F, 0.1413F, -6.462F, 4, 1, 11, -0.35F, true));
+        this.book4.cubeList.add(new ModelBox(this.book4, 0, 16, -11.6F, -0.1087F, -6.4619F, 9, 1, 11, -0.4F, true));
+        this.book4.cubeList.add(new ModelBox(this.book4, 0, 16, -4.0F, -0.1087F, -6.4619F, 9, 1, 11, -0.4F, false));
+        this.book4_list3 = new MModelRenderer(this);
+        this.book4_list3.setRotationPoint(-3.301F, -0.5337F, 3.5381F);
+        this.book4.addChild(this.book4_list3);
+        this.list4 = new MModelRenderer(this);
+        this.list4.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.setRotation(this.list4, 0.0F, 0.0F, 0.5236F);
+        this.book4_list3.addChild(this.list4);
+        this.list4.cubeList.add(new ModelBox(this.list4, 28, 0, -1.2607F, 0.0017F, -9.0F, 1, 0, 9, 0.0F, true));
+        this.list4.cubeList.add(new ModelBox(this.list4, 26, 10, -1.0F, 0.0012F, -9.0F, 1, 0, 9, 0.0F, true));
+        this.list3 = new MModelRenderer(this);
+        this.list3.setRotationPoint(-1.2607F, 0.0017F, 0.0F);
+        this.setRotation(this.list3, 0.0F, 0.0F, -0.4363F);
+        this.list4.addChild(this.list3);
+        this.list3.cubeList.add(new ModelBox(this.list3, 30, 0, -2.0F, 0.0F, -9.0F, 2, 0, 9, 0.0F, true));
+        this.list2 = new MModelRenderer(this);
+        this.list2.setRotationPoint(-2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list2, 0.0F, 0.0F, -0.2182F);
+        this.list3.addChild(this.list2);
+        this.list2.cubeList.add(new ModelBox(this.list2, 34, 0, -2.0F, 0.0F, -9.0F, 2, 0, 9, 0.0F, true));
+        this.list1 = new MModelRenderer(this);
+        this.list1.setRotationPoint(-2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list1, 0.0F, 0.0F, -0.1745F);
+        this.list2.addChild(this.list1);
+        this.list1.cubeList.add(new ModelBox(this.list1, 38, 0, -2.0F, 0.0F, -9.0F, 2, 0, 9, 0.0F, true));
+        this.list5 = new MModelRenderer(this);
+        this.list5.setRotationPoint(-2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list5, 0.0F, 0.0F, -0.1745F);
+        this.list2.addChild(this.list5);
+        this.book4_list2 = new MModelRenderer(this);
+        this.book4_list2.setRotationPoint(-3.299F, -0.5337F, 3.5381F);
+        this.book4.addChild(this.book4_list2);
+        this.list6 = new MModelRenderer(this);
+        this.list6.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.setRotation(this.list6, 0.0F, 0.0F, -0.5236F);
+        this.book4_list2.addChild(this.list6);
+        this.list6.cubeList.add(new ModelBox(this.list6, 42, 0, -0.7393F, 0.0017F, -9.0F, 2, 1, 9, 0.0F, false));
+        this.list7 = new MModelRenderer(this);
+        this.list7.setRotationPoint(1.2607F, 0.0017F, 0.0F);
+        this.setRotation(this.list7, 0.0F, 0.0F, 0.4363F);
+        this.list6.addChild(this.list7);
+        this.list7.cubeList.add(new ModelBox(this.list7, 42, 0, 0.0F, 0.0F, -9.0F, 2, 1, 9, 0.0F, false));
+        this.list8 = new MModelRenderer(this);
+        this.list8.setRotationPoint(2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list8, 0.0F, 0.0F, 0.2182F);
+        this.list7.addChild(this.list8);
+        this.list8.cubeList.add(new ModelBox(this.list8, 42, 0, 0.0F, 0.0F, -9.0F, 2, 1, 9, 0.0F, false));
+        this.list9 = new MModelRenderer(this);
+        this.list9.setRotationPoint(2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list9, 0.0F, 0.0F, 0.1745F);
+        this.list8.addChild(this.list9);
+        this.list10 = new MModelRenderer(this);
+        this.list10.setRotationPoint(2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list10, 0.0F, 0.0F, 0.1745F);
+        this.list8.addChild(this.list10);
+        this.list10.cubeList.add(new ModelBox(this.list10, 19, 0, 0.0F, 0.0F, -9.0F, 2, 1, 9, 0.0F, false));
+        this.book4_list4 = new MModelRenderer(this);
+        this.book4_list4.setRotationPoint(-3.301F, -0.5337F, 3.5381F);
+        this.book4.addChild(this.book4_list4);
+        this.list11 = new MModelRenderer(this);
+        this.list11.setRotationPoint(0.0F, 0.0F, 0.0F);
+        this.setRotation(this.list11, 0.0F, 0.0F, 0.5236F);
+        this.book4_list4.addChild(this.list11);
+        this.list11.cubeList.add(new ModelBox(this.list11, 42, 0, -1.2607F, 0.0017F, -9.0F, 2, 1, 9, 0.0F, true));
+        this.list12 = new MModelRenderer(this);
+        this.list12.setRotationPoint(-1.2607F, 0.0017F, 0.0F);
+        this.setRotation(this.list12, 0.0F, 0.0F, -0.4363F);
+        this.list11.addChild(this.list12);
+        this.list12.cubeList.add(new ModelBox(this.list12, 42, 0, -2.0F, 0.0F, -9.0F, 2, 1, 9, 0.0F, true));
+        this.list13 = new MModelRenderer(this);
+        this.list13.setRotationPoint(-2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list13, 0.0F, 0.0F, -0.2182F);
+        this.list12.addChild(this.list13);
+        this.list13.cubeList.add(new ModelBox(this.list13, 42, 0, -2.0F, 0.0F, -9.0F, 2, 1, 9, 0.0F, true));
+        this.list14 = new MModelRenderer(this);
+        this.list14.setRotationPoint(-2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list14, 0.0F, 0.0F, -0.1745F);
+        this.list13.addChild(this.list14);
+        this.list15 = new MModelRenderer(this);
+        this.list15.setRotationPoint(-2.0F, 0.0F, 0.0F);
+        this.setRotation(this.list15, 0.0F, 0.0F, -0.1745F);
+        this.list13.addChild(this.list15);
+        this.list15.cubeList.add(new ModelBox(this.list15, 19, 0, -2.0F, 0.0F, -9.0F, 2, 1, 9, 0.0F, true));
+        this.cup = new MModelRenderer(this);
+        this.cup.setRotationPoint(0.0F, 0.1F, 0.0F);
+        this.cup.cubeList.add(new ModelBox(this.cup, 35, 28, -3.5F, -6.25F, -0.5F, 4, 1, 4, -0.75F, false));
+        this.cup.cubeList.add(new ModelBox(this.cup, 29, 22, -3.75F, -6.75F, -0.5F, 2, 1, 4, -0.75F, false));
+        this.cup.cubeList.add(new ModelBox(this.cup, 29, 46, -1.25F, -6.75F, -0.5F, 2, 1, 4, -0.75F, false));
+        this.cup.cubeList.add(new ModelBox(this.cup, 29, 58, -3.5F, -6.75F, -0.75F, 4, 1, 2, -0.75F, false));
+        this.cup.cubeList.add(new ModelBox(this.cup, 29, 36, -3.5F, -6.75F, 1.75F, 4, 1, 2, -0.75F, false));
+        this.bone15 = new MModelRenderer(this);
+        this.bone15.setRotationPoint(0.2F, -0.1F, 0.0F);
+        this.cup.addChild(this.bone15);
+        this.bone11 = new MModelRenderer(this);
+        this.bone11.setRotationPoint(-3.75F, -6.0F, 0.0F);
+        this.setRotation(this.bone11, 0.0F, 0.0F, -3.1416F);
+        this.bone15.addChild(this.bone11);
+        this.bone12 = new MModelRenderer(this);
+        this.bone12.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone12, 0.0F, 0.0F, -1.0472F);
+        this.bone11.addChild(this.bone12);
+        this.bone12.cubeList.add(new ModelBox(this.bone12, 4, 61, -2.7209F, -0.4788F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone13 = new MModelRenderer(this);
+        this.bone13.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone13, 0.0F, 0.0F, -1.5708F);
+        this.bone11.addChild(this.bone13);
+        this.bone13.cubeList.add(new ModelBox(this.bone13, 0, 61, -2.379F, -1.797F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone14 = new MModelRenderer(this);
+        this.bone14.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone14, 0.0F, 0.0F, -0.5672F);
+        this.bone11.addChild(this.bone14);
+        this.bone14.cubeList.add(new ModelBox(this.bone14, 0, 59, -2.4078F, 0.7581F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone6 = new MModelRenderer(this);
+        this.bone6.setRotationPoint(-3.75F, -6.0F, 0.0F);
+        this.setRotation(this.bone6, 0.0F, 0.0F, -1.5708F);
+        this.bone15.addChild(this.bone6);
+        this.bone7 = new MModelRenderer(this);
+        this.bone7.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone7, 0.0F, 0.0F, -1.0472F);
+        this.bone6.addChild(this.bone7);
+        this.bone7.cubeList.add(new ModelBox(this.bone7, 4, 61, -2.0872F, 0.1126F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone8 = new MModelRenderer(this);
+        this.bone8.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone8, 0.0F, 0.0F, -1.5708F);
+        this.bone6.addChild(this.bone8);
+        this.bone8.cubeList.add(new ModelBox(this.bone8, 0, 61, -2.126F, -0.968F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone9 = new MModelRenderer(this);
+        this.bone9.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone9, 0.0F, 0.0F, -0.5672F);
+        this.bone6.addChild(this.bone9);
+        this.bone9.cubeList.add(new ModelBox(this.bone9, 0, 59, -1.5727F, 0.9901F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone5 = new MModelRenderer(this);
+        this.bone5.setRotationPoint(-3.75F, -6.0F, 0.0F);
+        this.bone15.addChild(this.bone5);
+        this.bone4 = new MModelRenderer(this);
+        this.bone4.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone4, 0.0F, 0.0F, -1.0472F);
+        this.bone5.addChild(this.bone4);
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 4, 61, -1.4958F, -0.521F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone10 = new MModelRenderer(this);
+        this.bone10.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone10, 0.0F, 0.0F, -1.5708F);
+        this.bone5.addChild(this.bone10);
+        this.bone10.cubeList.add(new ModelBox(this.bone10, 0, 61, -1.297F, -1.221F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone3 = new MModelRenderer(this);
+        this.bone3.setRotationPoint(1.0F, -1.75F, 1.5F);
+        this.setRotation(this.bone3, 0.0F, 0.0F, -0.5672F);
+        this.bone5.addChild(this.bone3);
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 0, 59, -1.3407F, 0.155F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.bone2 = new MModelRenderer(this);
+        this.bone2.setRotationPoint(1.0F, -0.75F, 1.5F);
+        this.bone5.addChild(this.bone2);
+        this.bone2.cubeList.add(new ModelBox(this.bone2, 0, 61, -0.8F, -0.3F, -0.5F, 1, 1, 1, -0.65F, false));
+        this.Svecka = new MModelRenderer(this);
+        this.svecha = new MModelRenderer(this);
+        this.Svecka.addChild(this.svecha);
+        this.svecha.cubeList.add(new ModelBox(this.svecha, 60, 4, -2.0F, -9.0F, 1.0F, 1, 3, 1, 0.0F, false));
+        this.svecha.cubeList.add(new ModelBox(this.svecha, 60, 0, -2.0F, -10.25F, 1.0F, 1, 2, 1, -0.65F, false));
+        this.kaplya = new MModelRenderer(this);
+        this.kaplya.setRotationPoint(-1.1F, -6.9F, 1.5F);
+        this.Svecka.addChild(this.kaplya);
+        this.kaplya.cubeList.add(new ModelBox(this.kaplya, 60, 4, -0.4F, -0.6F, -0.5F, 1, 2, 1, -0.6F, false));
+        this.kaplya2 = new MModelRenderer(this);
+        this.kaplya2.setRotationPoint(-1.9F, -7.9F, 1.5F);
+        this.Svecka.addChild(this.kaplya2);
+        this.kaplya2.cubeList.add(new ModelBox(this.kaplya2, 60, 4, -0.6F, -0.6F, -0.5F, 1, 2, 1, -0.6F, false));
+        this.ogon = new MModelRenderer(this);
+        this.ogon.setRotationPoint(-1.5F, -9.0F, 1.5F);
+        this.setRotation(this.ogon, 0.0F, 1.5708F, 0.0F);
+        this.Svecka.addChild(this.ogon);
+        this.ogon.cubeList.add(new ModelBox(this.ogon, 43, 39, -2.5F, -3.5F, -1.5F, 5, 5, 3, -1.5F, false));
+        this.ogon2 = new MModelRenderer(this);
+        this.ogon2.setRotationPoint(-1.5F, -9.0F, 1.5F);
+        this.Svecka.addChild(this.ogon2);
+        this.ogon2.cubeList.add(new ModelBox(this.ogon2, 43, 39, -2.5F, -3.5F, -1.501F, 5, 5, 3, -1.5F, false));
+        super.setTexture(new ResourceLocation("minidot", "pets/bookstack.png"));
+        BBAnimationLoader bbanimationloader = new BBAnimationLoader(new ResourceLocation("minidot", "pets/bookstack_animation.json"));
+        this.animation = bbanimationloader.mustGet("bookstack_animation.json", this);
+    }
+
+    protected void preRender(ModelPlayer modelPlayer, EntityPlayer player, float time, MiniDotPlayer pi)
+    {
+        GlStateManager.translate(0.6D, -0.05D, 0.4D);
+        double d0 = (double)MathHelper.sin(time * 0.1F) * 0.03D;
+        GlStateManager.translate(0.0D, d0, 0.0D);
+        this.animation.tick(time);
+        super.preRender(modelPlayer, player, time, pi);
+    }
+
+    public void render(ModelPlayer modelPlayer, EntityPlayer player, float time, MiniDotPlayer pi)
+    {
+        GlStateManager.enableCull();
+        super.render(modelPlayer, player, time, pi);
+        GlStateManager.disableCull();
+    }
+
+    public void renderAsItem(float time)
+    {
+        GlStateManager.translate(0.0D, 0.2D, 0.0D);
+        this.animation.tick(time);
+        super.renderAsItem(time);
+    }
+
+    public String getName()
+    {
+        return "\u0421\u0442\u043e\u043f\u043a\u0430 \u043a\u043d\u0438\u0433";
+    }
+
+    public String getCreator()
+    {
+        return "EvilBendy";
+    }
+}

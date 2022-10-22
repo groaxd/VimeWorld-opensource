@@ -1,0 +1,261 @@
+package net.xtrafrancyz.mods.minidot.items.pet;
+
+import net.minecraft.client.model.ModelBox;
+import net.minecraft.client.model.ModelPlayer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.MathHelper;
+import net.minecraft.util.ResourceLocation;
+import net.xtrafrancyz.mods.minidot.MiniDotPlayer;
+import net.xtrafrancyz.mods.minidot.items.MModelRenderer;
+
+public class GiftBig extends BasePet
+{
+    private final MModelRenderer bone;
+    private final MModelRenderer Candy;
+    private final MModelRenderer Candy2;
+    private final MModelRenderer bone34;
+    private final MModelRenderer CandyJ;
+    private final MModelRenderer Candy_J2;
+    private final MModelRenderer Candy_J3;
+    private final MModelRenderer bone2;
+    private final MModelRenderer bone3;
+    private final MModelRenderer bone5;
+    private final MModelRenderer bone4;
+    private final MModelRenderer bone6;
+    private final MModelRenderer bone7;
+    private final MModelRenderer bone8;
+    private final MModelRenderer bone9;
+    private final MModelRenderer bone10;
+    private final MModelRenderer bone11;
+    private final MModelRenderer bone12;
+    private final MModelRenderer bone13;
+    private final MModelRenderer bone14;
+    private final MModelRenderer bone15;
+    private final MModelRenderer bone16;
+    private final MModelRenderer bone17;
+    private final MModelRenderer bone18;
+    private final MModelRenderer bone19;
+    private final MModelRenderer bone20;
+    private final MModelRenderer bone21;
+    private final MModelRenderer bone22;
+    private final MModelRenderer bone23;
+    private final MModelRenderer bone24;
+    private final MModelRenderer bone25;
+    private final MModelRenderer bone26;
+    private final MModelRenderer bone27;
+    private final MModelRenderer bone28;
+    private final MModelRenderer bone29;
+    private final MModelRenderer bone30;
+    private final MModelRenderer bone31;
+    private final MModelRenderer bone32;
+    private final MModelRenderer bone33;
+
+    public GiftBig()
+    {
+        this.textureWidth = 64;
+        this.textureHeight = 64;
+        this.useDisplayLists = true;
+        this.bone = new MModelRenderer(this);
+        this.Candy = new MModelRenderer(this);
+        this.setRotation(this.Candy, 0.0F, 0.0F, -0.3491F);
+        this.bone.addChild(this.Candy);
+        this.Candy.cubeList.add(new ModelBox(this.Candy, 54, 0, -1.0F, -26.0F, -5.0F, 1, 1, 4, 0.0F, false));
+        this.Candy.cubeList.add(new ModelBox(this.Candy, 50, 19, -1.0F, -25.0F, -6.0F, 1, 1, 6, 0.0F, false));
+        this.Candy.cubeList.add(new ModelBox(this.Candy, 46, 19, -1.0F, -24.0F, -7.0F, 1, 4, 8, 0.0F, false));
+        this.Candy.cubeList.add(new ModelBox(this.Candy, 50, 19, -1.0F, -20.0F, -6.0F, 1, 1, 6, 0.0F, false));
+        this.Candy.cubeList.add(new ModelBox(this.Candy, 54, 0, -1.0F, -19.0F, -5.0F, 1, 1, 4, 0.0F, false));
+        this.Candy.cubeList.add(new ModelBox(this.Candy, 54, 5, -1.0F, -18.0F, -3.5F, 1, 9, 1, 0.0F, false));
+        this.Candy2 = new MModelRenderer(this);
+        this.setRotation(this.Candy2, 0.0873F, -0.7854F, -0.1745F);
+        this.bone.addChild(this.Candy2);
+        this.Candy2.cubeList.add(new ModelBox(this.Candy2, 54, 0, -3.9F, -23.0F, -4.0F, 1, 1, 4, 0.0F, false));
+        this.Candy2.cubeList.add(new ModelBox(this.Candy2, 50, 19, -3.9F, -22.0F, -5.0F, 1, 1, 6, 0.0F, false));
+        this.Candy2.cubeList.add(new ModelBox(this.Candy2, 46, 19, -3.9F, -21.0F, -6.0F, 1, 4, 8, 0.0F, false));
+        this.Candy2.cubeList.add(new ModelBox(this.Candy2, 50, 19, -3.9F, -17.0F, -5.0F, 1, 1, 6, 0.0F, false));
+        this.Candy2.cubeList.add(new ModelBox(this.Candy2, 54, 0, -3.9F, -16.0F, -4.0F, 1, 1, 4, 0.0F, false));
+        this.Candy2.cubeList.add(new ModelBox(this.Candy2, 54, 5, -3.9F, -15.0F, -2.5F, 1, 9, 1, 0.0F, false));
+        this.bone34 = new MModelRenderer(this);
+        this.bone.addChild(this.bone34);
+        this.bone34.cubeList.add(new ModelBox(this.bone34, 0, 31, -7.0F, -11.0F, -7.0F, 14, 0, 14, 0.0F, false));
+        this.CandyJ = new MModelRenderer(this);
+        this.setRotation(this.CandyJ, 0.1745F, -0.6109F, -0.2618F);
+        this.bone.addChild(this.CandyJ);
+        this.CandyJ.cubeList.add(new ModelBox(this.CandyJ, 38, 19, -7.9F, -24.5F, -1.9F, 3, 1, 1, 0.0F, false));
+        this.CandyJ.cubeList.add(new ModelBox(this.CandyJ, 34, 20, -4.9F, -23.5F, -1.9F, 1, 9, 1, 0.0F, false));
+        this.CandyJ.cubeList.add(new ModelBox(this.CandyJ, 38, 21, -8.9F, -23.5F, -1.9F, 1, 2, 1, 0.0F, false));
+        this.Candy_J2 = new MModelRenderer(this);
+        this.Candy_J2.setRotationPoint(-4.5F, -23.0F, -5.5F);
+        this.setRotation(this.Candy_J2, 0.0F, -1.2217F, -0.1745F);
+        this.bone.addChild(this.Candy_J2);
+        this.Candy_J2.cubeList.add(new ModelBox(this.Candy_J2, 38, 24, -4.3F, 3.2F, -0.55F, 3, 1, 1, 0.0F, false));
+        this.Candy_J2.cubeList.add(new ModelBox(this.Candy_J2, 38, 26, -1.3F, 4.2F, -0.55F, 1, 9, 1, 0.0F, false));
+        this.Candy_J2.cubeList.add(new ModelBox(this.Candy_J2, 42, 26, -5.3F, 4.2F, -0.55F, 1, 2, 1, 0.0F, false));
+        this.Candy_J3 = new MModelRenderer(this);
+        this.Candy_J3.setRotationPoint(-4.5F, -23.0F, -5.5F);
+        this.setRotation(this.Candy_J3, -0.4363F, 2.5307F, 0.2618F);
+        this.bone.addChild(this.Candy_J3);
+        this.Candy_J3.cubeList.add(new ModelBox(this.Candy_J3, 28, 31, -13.2F, -4.3F, 8.35F, 3, 1, 1, 0.0F, false));
+        this.Candy_J3.cubeList.add(new ModelBox(this.Candy_J3, 58, 5, -10.2F, -3.3F, 8.35F, 1, 9, 1, 0.0F, false));
+        this.Candy_J3.cubeList.add(new ModelBox(this.Candy_J3, 46, 19, -14.2F, -3.3F, 8.35F, 1, 2, 1, 0.0F, false));
+        this.bone2 = new MModelRenderer(this);
+        this.bone3 = new MModelRenderer(this);
+        this.bone2.addChild(this.bone3);
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 0, 0, -8.0F, -0.999F, -8.0F, 16, 0, 16, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 26, 45, -8.0F, -0.995F, -1.0F, 16, 0, 2, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 26, 31, -1.0F, -0.995F, -8.0F, 2, 0, 16, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 0, 0, -8.0F, -16.0F, -8.0F, 1, 15, 16, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 0, 0, 7.0F, -16.0F, -8.0F, 1, 15, 16, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 42, 31, 8.0011F, -16.0F, -1.0F, 0, 15, 2, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 42, 31, -8.001F, -16.0F, -1.0F, 0, 15, 2, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 0, 0, -7.0F, -16.0F, -8.0F, 14, 15, 1, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 42, 31, -1.0F, -16.0F, -8.001F, 2, 15, 0, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 42, 31, -1.0F, -16.0F, 8.001F, 2, 15, 0, 0.0F, false));
+        this.bone3.cubeList.add(new ModelBox(this.bone3, 0, 0, -7.0F, -16.0F, 7.0F, 14, 15, 1, 0.0F, false));
+        this.bone5 = new MModelRenderer(this);
+        this.bone5.setRotationPoint(1.0F, 0.0F, 1.0F);
+        this.setRotation(this.bone5, -0.1745F, 0.7854F, 0.0F);
+        this.bone4 = new MModelRenderer(this);
+        this.bone5.addChild(this.bone4);
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 0, -9.0F, -19.0F, -9.0F, 18, 1, 18, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 24, 45, -9.0F, -19.001F, -1.0F, 18, 0, 2, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 24, 31, -1.0F, -19.002F, -9.0F, 2, 0, 18, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 0, -9.0F, -18.0F, -9.0F, 1, 2, 18, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 31, -9.001F, -19.0F, -1.0F, 0, 3, 2, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 31, 9.001F, -19.0F, -1.0F, 0, 3, 2, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 0, 8.0F, -18.0F, -9.0F, 1, 2, 18, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 0, -8.0F, -18.0F, -9.0F, 16, 2, 1, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 0, -8.0F, -18.0F, 8.0F, 16, 2, 1, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 4, 31, -1.0F, -19.0F, 9.001F, 2, 3, 0, 0.0F, false));
+        this.bone4.cubeList.add(new ModelBox(this.bone4, 0, 31, -1.0F, -19.0F, -9.001F, 2, 3, 0, 0.0F, false));
+        this.bone6 = new MModelRenderer(this);
+        this.bone5.addChild(this.bone6);
+        this.bone7 = new MModelRenderer(this);
+        this.bone6.addChild(this.bone7);
+        this.bone7.cubeList.add(new ModelBox(this.bone7, 0, 31, 0.0F, -19.0F, -1.0F, 2, 0, 2, 0.0F, false));
+        this.bone8 = new MModelRenderer(this);
+        this.setRotation(this.bone8, 0.0F, 0.0F, -0.2618F);
+        this.bone6.addChild(this.bone8);
+        this.bone8.cubeList.add(new ModelBox(this.bone8, 0, 31, 6.8497F, -17.8349F, -1.0F, 3, 0, 2, 0.0F, false));
+        this.bone9 = new MModelRenderer(this);
+        this.setRotation(this.bone9, 0.0F, 0.0F, -((float)Math.PI * 2F / 9F));
+        this.bone6.addChild(this.bone9);
+        this.bone9.cubeList.add(new ModelBox(this.bone9, 0, 31, 16.4642F, -12.0013F, -1.0F, 2, 0, 2, 0.0F, false));
+        this.bone10 = new MModelRenderer(this);
+        this.setRotation(this.bone10, 0.0F, 0.0F, -1.5708F);
+        this.bone6.addChild(this.bone10);
+        this.bone10.cubeList.add(new ModelBox(this.bone10, 0, 31, 21.0621F, 6.4301F, -1.0F, 1, 0, 2, 0.0F, false));
+        this.bone11 = new MModelRenderer(this);
+        this.setRotation(this.bone11, 0.0F, 0.0F, 0.2618F);
+        this.bone6.addChild(this.bone11);
+        this.bone11.cubeList.add(new ModelBox(this.bone11, 0, 31, -1.5F, -22.9743F, -1.0F, 2, 0, 2, 0.0F, false));
+        this.bone12 = new MModelRenderer(this);
+        this.setRotation(this.bone12, 0.0F, 0.0F, -0.3491F);
+        this.bone6.addChild(this.bone12);
+        this.bone12.cubeList.add(new ModelBox(this.bone12, 0, 31, 8.9488F, -19.6798F, -1.0F, 3, 0, 2, 0.0F, false));
+        this.bone13 = new MModelRenderer(this);
+        this.setRotation(this.bone13, 0.0F, 0.0F, -0.9599F);
+        this.bone6.addChild(this.bone13);
+        this.bone13.cubeList.add(new ModelBox(this.bone13, 0, 31, 14.6183F, -10.988F, -1.0F, 4, 0, 2, 0.0F, false));
+        this.bone14 = new MModelRenderer(this);
+        this.bone5.addChild(this.bone14);
+        this.bone15 = new MModelRenderer(this);
+        this.bone14.addChild(this.bone15);
+        this.bone15.cubeList.add(new ModelBox(this.bone15, 0, 31, -2.0F, -19.0F, -1.0F, 2, 0, 2, 0.0F, true));
+        this.bone16 = new MModelRenderer(this);
+        this.setRotation(this.bone16, 0.0F, 0.0F, 0.2618F);
+        this.bone14.addChild(this.bone16);
+        this.bone16.cubeList.add(new ModelBox(this.bone16, 0, 31, -9.8497F, -17.8349F, -1.0F, 3, 0, 2, 0.0F, true));
+        this.bone17 = new MModelRenderer(this);
+        this.setRotation(this.bone17, 0.0F, 0.0F, ((float)Math.PI * 2F / 9F));
+        this.bone14.addChild(this.bone17);
+        this.bone17.cubeList.add(new ModelBox(this.bone17, 0, 31, -18.4642F, -12.0013F, -1.0F, 2, 0, 2, 0.0F, true));
+        this.bone18 = new MModelRenderer(this);
+        this.setRotation(this.bone18, 0.0F, 0.0F, 1.5708F);
+        this.bone14.addChild(this.bone18);
+        this.bone18.cubeList.add(new ModelBox(this.bone18, 0, 31, -22.0621F, 6.4301F, -1.0F, 1, 0, 2, 0.0F, true));
+        this.bone19 = new MModelRenderer(this);
+        this.setRotation(this.bone19, 0.0F, 0.0F, -0.2618F);
+        this.bone14.addChild(this.bone19);
+        this.bone19.cubeList.add(new ModelBox(this.bone19, 0, 31, -0.5F, -22.9743F, -1.0F, 2, 0, 2, 0.0F, true));
+        this.bone20 = new MModelRenderer(this);
+        this.setRotation(this.bone20, 0.0F, 0.0F, 0.3491F);
+        this.bone14.addChild(this.bone20);
+        this.bone20.cubeList.add(new ModelBox(this.bone20, 0, 31, -11.9488F, -19.6798F, -1.0F, 3, 0, 2, 0.0F, true));
+        this.bone21 = new MModelRenderer(this);
+        this.setRotation(this.bone21, 0.0F, 0.0F, 0.9599F);
+        this.bone14.addChild(this.bone21);
+        this.bone21.cubeList.add(new ModelBox(this.bone21, 0, 31, -18.6183F, -10.988F, -1.0F, 4, 0, 2, 0.0F, true));
+        this.bone22 = new MModelRenderer(this);
+        this.bone5.addChild(this.bone22);
+        this.bone23 = new MModelRenderer(this);
+        this.setRotation(this.bone23, -0.1745F, 0.0F, 0.0F);
+        this.bone22.addChild(this.bone23);
+        this.bone23.cubeList.add(new ModelBox(this.bone23, 0, 31, -1.0F, -18.4696F, -6.3473F, 2, 0, 2, 0.0F, false));
+        this.bone24 = new MModelRenderer(this);
+        this.setRotation(this.bone24, -0.7854F, 0.0F, 0.0F);
+        this.bone22.addChild(this.bone24);
+        this.bone24.cubeList.add(new ModelBox(this.bone24, 0, 31, -1.0F, -11.4888F, -17.7931F, 2, 0, 2, 0.0F, false));
+        this.bone25 = new MModelRenderer(this);
+        this.setRotation(this.bone25, ((float)Math.PI * 2F / 9F), 0.0F, 0.0F);
+        this.bone22.addChild(this.bone25);
+        this.bone25.cubeList.add(new ModelBox(this.bone25, 0, 31, -1.0F, -18.7268F, 9.8953F, 2, 0, 2, 0.0F, false));
+        this.bone26 = new MModelRenderer(this);
+        this.bone22.addChild(this.bone26);
+        this.bone26.cubeList.add(new ModelBox(this.bone26, 0, 31, -1.0F, -21.9925F, -2.9257F, 2, 0, 1, 0.0F, false));
+        this.bone27 = new MModelRenderer(this);
+        this.setRotation(this.bone27, -0.7854F, 0.0F, 0.0F);
+        this.bone22.addChild(this.bone27);
+        this.bone27.cubeList.add(new ModelBox(this.bone27, 0, 31, -1.0F, -14.1893F, -16.9127F, 2, 0, 3, 0.0F, false));
+        this.bone28 = new MModelRenderer(this);
+        this.bone5.addChild(this.bone28);
+        this.bone29 = new MModelRenderer(this);
+        this.setRotation(this.bone29, 0.1745F, 0.0F, 0.0F);
+        this.bone28.addChild(this.bone29);
+        this.bone29.cubeList.add(new ModelBox(this.bone29, 0, 31, -1.0F, -18.4696F, 4.3473F, 2, 0, 2, 0.0F, true));
+        this.bone30 = new MModelRenderer(this);
+        this.setRotation(this.bone30, 0.7854F, 0.0F, 0.0F);
+        this.bone28.addChild(this.bone30);
+        this.bone30.cubeList.add(new ModelBox(this.bone30, 0, 31, -1.0F, -11.4888F, 15.7931F, 2, 0, 2, 0.0F, true));
+        this.bone31 = new MModelRenderer(this);
+        this.setRotation(this.bone31, -((float)Math.PI * 2F / 9F), 0.0F, 0.0F);
+        this.bone28.addChild(this.bone31);
+        this.bone31.cubeList.add(new ModelBox(this.bone31, 0, 31, -1.0F, -18.7268F, -11.8953F, 2, 0, 2, 0.0F, true));
+        this.bone32 = new MModelRenderer(this);
+        this.bone28.addChild(this.bone32);
+        this.bone32.cubeList.add(new ModelBox(this.bone32, 0, 31, -1.0F, -21.9925F, 1.9257F, 2, 0, 1, 0.0F, true));
+        this.bone33 = new MModelRenderer(this);
+        this.setRotation(this.bone33, 0.7854F, 0.0F, 0.0F);
+        this.bone28.addChild(this.bone33);
+        this.bone33.cubeList.add(new ModelBox(this.bone33, 0, 31, -1.0F, -14.1893F, 13.9127F, 2, 0, 3, 0.0F, true));
+        this.setTexture(new ResourceLocation("minidot", "pets/gift_big.png"));
+    }
+
+    protected void processMotion(ModelPlayer modelPlayer, EntityPlayer player, float time)
+    {
+        float f = MathHelper.sin(time * 0.16F) * 0.04F;
+        float f1 = time * 1.5F;
+        GlStateManager.translate(0.8F, -0.2F + f, 0.4F);
+        GlStateManager.rotate(90.0F + f1, 0.0F, 1.0F, 0.0F);
+        GlStateManager.scale(0.7F, 0.7F, 0.7F);
+    }
+
+    public void render(ModelPlayer modelPlayer, EntityPlayer player, float time, MiniDotPlayer pi)
+    {
+        GlStateManager.enableCull();
+        super.render(modelPlayer, player, time, pi);
+        GlStateManager.disableCull();
+    }
+
+    public void renderAsItem(float time)
+    {
+        GlStateManager.translate(0.0F, 0.3F, 0.0F);
+        GlStateManager.scale(0.7F, 0.7F, 0.7F);
+        super.renderAsItem(time);
+    }
+
+    public String getName()
+    {
+        return "\u0411\u043e\u043b\u044c\u0448\u043e\u0439 \u043f\u043e\u0434\u0430\u0440\u043e\u043a";
+    }
+}
